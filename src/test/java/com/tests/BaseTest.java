@@ -9,28 +9,28 @@ import com.pages.HomePage;
 import com.logs.Log;
 
 public class BaseTest {
-	 public WebDriver driver;
-	    public HomePage  homePage;
+	public WebDriver driver;
+	public HomePage  homePage;
 
-	    public WebDriver getDriver() {
-	        return driver;
-	    }
+	public WebDriver getDriver() {
+		return driver;
+	}
 
-	    @BeforeClass
-	    public void classLevelSetup() {
-	        Log.info("Tests are starting!");
-	        driver = new ChromeDriver();
-	    }
+	@BeforeClass
+	public void classLevelSetup() {
+		Log.info("Tests are starting!");
+		driver = new ChromeDriver();
+	}
 
-	    @BeforeMethod
-	    public void methodLevelSetup() {
-	        homePage = new HomePage(driver);
-	    }
+	@BeforeMethod
+	public void methodLevelSetup() {
+		homePage = new HomePage(driver);
+	}
 
-	    @AfterClass
-	    public void teardown() {
-	        Log.info("Tests are ending!");
-	        driver.quit();
-	    }
+	@AfterClass
+	public void teardown() {
+		Log.info("Tests are ending!");
+		driver.quit();
+	}
 
 }
