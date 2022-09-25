@@ -1,8 +1,8 @@
 package com.listenres;
 
 
-import static reports.ExtentManager.getExtentReports;
-import static reports.ExtentTestManager.getTest;
+import static com.reports.ExtentManager.getExtentReports;
+import static com.reports.ExtentTestManager.getTest;
 
 import com.aventstack.extentreports.Status;
 import io.qameta.allure.Attachment;

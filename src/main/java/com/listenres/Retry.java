@@ -1,7 +1,6 @@
 package com.listenres;
 
 import com.aventstack.extentreports.Status;
-
 import static com.reports.ExtentTestManager.getTest;
 
 import org.openqa.selenium.OutputType;

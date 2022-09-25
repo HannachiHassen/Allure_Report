@@ -3,9 +3,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogType;
 
-public final class JSErrorLog {	
+public final class JSErrorLogs {	
 
-	public JSErrorLog (){}
+	public JSErrorLogs (){}
 	
 	    public static LogEntries getLogs(WebDriver driver) {
 	        return driver.manage().logs().get(LogType.BROWSER);
