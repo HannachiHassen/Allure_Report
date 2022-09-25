@@ -1,4 +1,4 @@
-package com.utils;
+package com.reports;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,16 +6,14 @@ import java.util.Map;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
+/**
+ * extentTestMap holds the information of thread ids and ExtentTest instances.
+ * ExtentReports instance created by calling getExtentReports() method from
+ * ExtentManager. At startTest() method, an instance of ExtentTest created and
+ * put into extentTestMap with current thread id. At getTest() method, return
+ * ExtentTest instance in extentTestMap by using current thread id.
+ */
 public final class ExtentTestManager {
-
-	/**
-	 * extentTestMap holds the information of thread ids and ExtentTest instances.
-	 * ExtentReports instance created by calling getExtentReports() method from
-	 * ExtentManager. At startTest() method, an instance of ExtentTest created and
-	 * put into extentTestMap with current thread id. At getTest() method, return
-	 * ExtentTest instance in extentTestMap by using current thread id.
-	 */
-	public ExtentTestManager() {}
 
 	static Map<Integer, ExtentTest> extentTestMap = new HashMap<>();
 	static ExtentReports extent = ExtentManager.getExtentReports();
@@ -29,5 +27,4 @@ public final class ExtentTestManager {
 		extentTestMap.put((int) Thread.currentThread().getId(), test);
 		return test;
 	}
-
 }

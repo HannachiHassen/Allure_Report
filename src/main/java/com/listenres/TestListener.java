@@ -14,7 +14,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import com.tests.BaseTest;
-import logs.Log;
+import com.logs.Log;
 
 public final class TestListener extends BaseTest implements ITestListener {
 	    private static String getTestMethodName(ITestResult iTestResult) {

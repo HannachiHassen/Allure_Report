@@ -5,8 +5,9 @@ import static org.testng.AssertJUnit.assertTrue;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import logs.JSErrorLogs;
-import logs.Log;
+
+import com.logs.JSErrorLogs;
+import com.logs.Log;
 public class LoginPage extends BasePage{
 
 	   /**Constructor*/

@@ -2,7 +2,8 @@ package com.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import logs.Log;
+
+import com.logs.Log;
 
 public final class HomePage extends BasePage {
 	/**
